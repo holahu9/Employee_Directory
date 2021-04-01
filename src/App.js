@@ -6,8 +6,8 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      <header className="jumotron">
-        Staff Directory
+      <header className="mb-5 text-center bold">
+        <h1>Employee Directory</h1>
       </header>
       <Employee />
     </div>

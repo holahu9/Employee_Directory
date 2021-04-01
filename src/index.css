@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -14,4 +15,8 @@ code {
 
 .font-color {
   color: rgb(247, 241, 241);
+}
+
+.App{ 
+  background-color: rgb(227, 235, 202);
 }

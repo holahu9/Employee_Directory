@@ -29,6 +29,20 @@ class Employee extends React.Component {
       });
   };
 
+
+  /*{this.state.employeeRecords.map(employeeRecord => (
+      
+      id={employeeRecord.id}
+      key={employeeRecord.id}}
+      firstName={employeeRecord.firstName}
+      lastName={employeeRecord.lastName}
+      email={employeeRecord.email}
+      image={employeeRecord.pic.medium}
+      phone={employeeRecord.cell}
+      location={employeeRecord.dob.date}
+   
+  ))}*/
+
   render() {
     return (
       <div>
