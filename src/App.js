@@ -1,16 +1,16 @@
 import React from "react";
-import Search from "./components/Search";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import './App.css';
+import Employee from "./components/Search/employee";
+import "./App.css";
+import "./index.css";
 
 function App() {
   return (
-      <div>
-        <Header />
-        <Search />
-        <Footer />
-      </div>
+    <div className="App">
+      <header className="jumotron">
+        Staff Directory
+      </header>
+      <Employee />
+    </div>
   );
 }
 
