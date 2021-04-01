@@ -1,6 +1,6 @@
 import React from "react";
 import Employee from "./components/Search/employee";
-import "./App.css";
+//import "./App.css";
 import "./index.css";
 
 function App() {
