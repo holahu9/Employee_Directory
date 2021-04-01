@@ -4,12 +4,7 @@ import { MDBDataTable } from "mdbreact";
 const EmployeeData = (props) => {
   const data = {
     columns: [
-      {
-        label: "Image",
-        field: "image",
-        sort: "asc",
-        width: 500,
-      },
+     
 
       {
         label: "Name",
@@ -35,12 +30,19 @@ const EmployeeData = (props) => {
         field: "dob",
         sort: "asc",
         width: 250,
-      }
+      },
+
+      {
+        label: "Image",
+        field: "image",
+        sort: "asc",
+        width: 500,
+      },
     ],
     rows:props.employees
   };
   console.log("Props", props);
-  return <MDBDataTable sorting={true} striped bordered data={data} />;
+  return <MDBDataTable sorting={true} hover striped bordered data={data} />;
 };
 
 export default EmployeeData;

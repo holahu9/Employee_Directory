@@ -10,43 +10,44 @@ class Employee extends React.Component {
   componentDidMount = () => {
     axios
       .get("https://randomuser.me/api/?results=500&nat=us")
-      .then((records) => {
-        let empdata = records.data.results;
+      .then((response) => {
+
+        // this.state.employeeRecords.map(employeeRecord => (
+          
+
+        //   id={employeeRecord.id}
+        //   key={employeeRecord.id}
+        //   firstName={employeeRecord.firstName}
+        //   lastName={employeeRecord.lastName}
+        //   email={employeeRecord.email}
+        //   image={employeeRecord.picture.medium}
+        //   phone={employeeRecord.cell}
+        //   dob={employeeRecord.dob.date}
+
+        
+
+        let empdata = response.data.results;
         let employeeRecordstemp = [];
-        console.log(empdata)
+        console.log(empdata);
         for (let i = 0; i < empdata.length; i++) {
-          let erecord = {
+          let record = {
             name: empdata[i].name.first + " " + empdata[i].name.last,
             email: empdata[i].email,
-            image: empdata[i].picture.medium,
+            image: empdata[i].picture.thumbnail,
             phone: empdata[i].cell,
             dob: empdata[i].dob.date,
           };
-          employeeRecordstemp.push(erecord);
+          employeeRecordstemp.push(record);
         }
         console.log(employeeRecordstemp);
         this.setState({ employeeRecords: employeeRecordstemp });
       });
   };
 
-
-  /*{this.state.employeeRecords.map(employeeRecord => (
-      
-      id={employeeRecord.id}
-      key={employeeRecord.id}}
-      firstName={employeeRecord.firstName}
-      lastName={employeeRecord.lastName}
-      email={employeeRecord.email}
-      image={employeeRecord.pic.medium}
-      phone={employeeRecord.cell}
-      location={employeeRecord.dob.date}
-   
-  ))}*/
-
   render() {
     return (
       <div>
-        <h2>Employee Details</h2>
+        
         <EmployeeData employees={this.state.employeeRecords} />
       </div>
     );
