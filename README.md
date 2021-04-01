@@ -32,6 +32,14 @@ To use this application once installed, the user launches the application from a
 Deployed to heroku:   https://strawberry-tart-05827.herokuapp.com/
 
 
+
+![Screen Shot 2021-04-01 at 2 35 37 PM](https://user-images.githubusercontent.com/70487513/113340561-0c410880-92fa-11eb-9866-11848b322d2a.png)
+
+
+
+
+![Screen Shot 2021-04-01 at 2 36 15 PM](https://user-images.githubusercontent.com/70487513/113340571-0f3bf900-92fa-11eb-99c3-1fce51ca77d0.png)
+
 ## Technologies:
 
 React
