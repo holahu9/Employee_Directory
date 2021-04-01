@@ -29,8 +29,7 @@ To use this application once installed, the user launches the application from a
 
 ## output 
 
-
-  http:/
+Deployed to heroku:   https://strawberry-tart-05827.herokuapp.com/
 
 
 ## Technologies:
